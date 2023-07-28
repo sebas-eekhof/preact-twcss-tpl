@@ -1,0 +1,23 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"tw:watch": "npx tailwindcss -i src/css/tailwind.css -c tailwind.config.js -o src/css/index.css --watch",
+		"tw:build": "NODE_ENV=production npx tailwindcss -i src/css/tailwind.css -c tailwind.config.js -o src/css/index.css --minify",
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"preact": "latest",
+		"react-icons": "latest"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "latest",
+		"autoprefixer": "latest",
+		"postcss": "latest",
+		"tailwindcss": "latest",
+		"typescript": "latest",
+		"vite": "latest"
+	}
+}
